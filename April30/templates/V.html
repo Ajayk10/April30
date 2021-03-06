@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I</title>
+</head>
+<body>
+
+</body>
+</html>
+
+{% extends 'base.html' %}
+{% block content %}
+	<div class="card">
+	  <div class="card-body">
+	  	<center>
+	    	<h1>How was the Questionare Session and describe about the person who has sent this questionare to you in few words by mentioning who he/she is..</h1> 
+	    </center>
+	    <form method="POST">
+			{% csrf_token %}
+			<input type="text" class="form-control" name="i18"><br><br>
+			<button type="submit" class="btn btn-primary btn-lg btn-block" name="book">Next page</button>
+		</form>
+	  </div>
+	</div>
+
+{% endblock %}

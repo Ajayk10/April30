@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>III</title>
+</head>
+<body>
+
+</body>
+</html>
+
+{% extends 'base.html' %}
+{% block content %}
+	<div class="card">
+	  <div class="card-body">
+	  	<center>
+	    	<h1>Questionare..!!</h1> 
+	    </center>
+	    <form method="POST">
+	    	{% csrf_token %}
+			9. What did your last relationship teach you?<br>
+			<input type="text" class="form-control" name="i9" required="true"><br><br>
+
+			10. What do you think of online dating?<br>
+			<input type="text" class="form-control" name="i10" required="true"><br><br>
+
+			11. Do you prefer dating just one person and see where it goes or dating multiple people until you make a decision?<br>
+			<input type="text" class="form-control" name="i11" required="true"><br><br>
+
+
+			12. What are the qualities(both physically and psychologically) you’re looking for in someone you want to grow old with?<br>
+			<input type="text" class="form-control" name="i12" required="true"><br><br>
+
+			13. What are you most grateful for in your life?<br>
+			<input type="text" class="form-control" name="i13" required="true"><br>
+			<button type="submit" class="btn btn-primary btn-lg btn-block" name="book">Next page</button>
+		</form>
+	  </div>
+	</div>
+
+{% endblock %}

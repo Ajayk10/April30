@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>II</title>
+</head>
+<body>
+
+</body>
+</html>
+
+{% extends 'base.html' %}
+{% block content %}
+	<div class="card">
+	  <div class="card-body">
+	  	<center>
+	    	<h1>Questionare..!!</h1> 
+	    </center>
+	    <form method="POST">
+	    	{% csrf_token %}
+	    	5. How would your best friends describe you??<br>
+			<input type="text" class="form-control" name="i5" required="true"><br><br>
+
+			6. Do you usually follow your heart or your head??<br>
+			<input type="text" class="form-control" name="i6" required="true"><br><br>
+
+			7. Would you put your family or your friends first if you had to choose one??<br>
+			<input type="text" class="form-control" name="i7" required="true"><br><br>
+
+			8. Did you ever had any relationships??<br>
+			<input type="text" class="form-control" name="i8" required="true"><br><br>
+			<button type="submit" class="btn btn-primary btn-lg btn-block" name="book">Next page</button>
+		</form>
+	  </div>
+	</div>
+
+{% endblock %}

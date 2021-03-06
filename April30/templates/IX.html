@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IX</title>
+</head>
+<body>
+
+</body>
+</html>
+
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+	<div class="card">
+	  <div class="card-body">
+	  	<div class="embed-responsive embed-responsive-21by9">
+  			<iframe class="embed-responsive-item" src="{% static 'images/video.mp4' %}" allowfullscreen></iframe>
+		</div>
+	  </div>
+	</div>
+
+{% endblock %}

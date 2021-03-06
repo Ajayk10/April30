@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="container">
+<br><br>
+<h1 style="background-color:#024e96;color: white; ">Admin panel is ready</h1><br>
+
+1. Where would you like to be in 5 years?<br>
+Ans.{% for d in data1 %} - {{d.i1}} | {% endfor %}<br><hr>
+
+2. What was the experience that impacted you the most in your life?<br>
+Ans.{% for d in data1 %} - {{d.i2}} | {% endfor %}<br><hr>
+
+3. What type of relationship did you have with your parents?<br>
+Ans.{% for d in data1 %} - {{d.i3}} | {% endfor %}<br><hr>
+
+4. Would you be with someone who doesn’t have the same beliefs as you?<br>
+Ans.{% for d in data1 %} - {{d.i4}} | {% endfor %}<br><hr>
+
+
+5. How would your best friends describe you??<br>
+Ans.{% for d in data2 %} - {{d.i5}} | {% endfor %}<br><hr>
+
+6. Do you usually follow your heart or your head??<br>
+Ans.{% for d in data2 %} - {{d.i6}} | {% endfor %}<br><hr>
+
+7. Would you put your family or your friends first if you had to choose one??<br>
+Ans.{% for d in data2 %} - {{d.i7}} | {% endfor %}<br><hr>
+
+8. Did you ever had any relationships??<br>
+Ans.{% for d in data2 %} - {{d.i8}} | {% endfor %}<br><hr>
+
+
+9. What did your last relationship teach you?<br>
+Ans.{% for d in data3 %} - {{d.i9}} | {% endfor %}<br><hr>
+
+10. What do you think of online dating?<br>
+Ans.{% for d in data3 %} - {{d.i10}} | {% endfor %}<br><hr>
+
+11. Do you prefer dating just one person and see where it goes or dating multiple people until you make a decision?<br>
+Ans.{% for d in data3 %} - {{d.i11}} | {% endfor %}<br><hr>
+
+12. What are the qualities(both physically and psychologically) you’re looking for in someone you want to grow old with?<br>
+Ans.{% for d in data3 %} - {{d.i12}} | {% endfor %}<br><hr>
+
+13. What are you most grateful for in your life?<br>
+Ans.{% for d in data3 %} - {{d.i13}} | {% endfor %}<br><hr>
+
+
+14. If you could change anything about your past, what would it be?<br>
+Ans.{% for d in data4 %} - {{d.i14}} | {% endfor %}<br><hr>
+
+15. What’s the one thing you would like to change about yourself today and why?<br>
+Ans.{% for d in data4 %} - {{d.i15}} | {% endfor %}<br><hr>
+
+16. If a psychic could tell you what will happen in the future, what would you want to know?<br>
+Ans.{% for d in data4 %} - {{d.i16}} | {% endfor %}<br><hr>
+
+17. If you knew that you only had one year to live, what would you change in your life?<br>
+Ans.{% for d in data4 %} - {{d.i17}} | {% endfor %}<br><hr>
+
+18. How was the Questionare Session and describe about the person who sent this questionare to you in few words by mentioning who he/she is..<br>
+Ans.{% for d in data5 %} - {{d.i18}} | {% endfor %}<br><hr><br><br>
+{% endblock %}

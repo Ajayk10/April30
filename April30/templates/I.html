@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I</title>
+</head>
+<body>
+
+</body>
+</html>
+
+{% extends 'base.html' %}
+{% block content %}
+	<div class="card">
+	  <div class="card-body">
+	  	<center>
+	    	<h1>Questionare..!!</h1> 
+	    </center>
+	    <form method="POST">
+	    	{% csrf_token %}
+	    	1. Where would you like to be in 5 years?<br>
+			<input type="text" class="form-control" name="i1" required="true"><br><br>
+			2. What was the experience that impacted you the most in your life?<br>
+			<input type="text" class="form-control" name="i2" required="true"><br><br>
+			3. What type of relationship did you have with your parents?<br>
+			<input type="text" class="form-control" name="i3" required="true"><br><br>
+			4. Would you be with someone who doesn’t have the same beliefs as you?<br>
+			<input type="text" class="form-control" name="i4" required="true"><br><center>
+			<button type="submit" class="btn btn-primary btn-lg btn-block" name="book">Next page</button>
+		</form>
+	  </div>
+	</div>
+
+{% endblock %}

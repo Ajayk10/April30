@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I</title>
+</head>
+<body>
+
+</body>
+</html>
+
+{% extends 'base.html' %}
+{% block content %}
+	<div class="card">
+	  <div class="card-body">
+	  	<center>
+	    	<h1>Questionare..!!</h1> 
+	    </center>
+	    <form method="POST">
+	    	{% csrf_token %}
+	    	14. If you could change anything about your past, what would it be?<br>
+			<input type="text" class="form-control" name="i14" required="true"><br><br>
+
+			15. What’s the one thing you would like to change about yourself today and why?<br>
+			<input type="text" class="form-control" name="i15" required="true"><br><br>
+
+			16. If a psychic could tell you what will happen in the future, what would you want to know?<br>
+			<input type="text" class="form-control" name="i16" required="true"><br><br>
+
+			17. If you knew that you only had one year to live, what would you change in your life?<br>
+			<input type="text" class="form-control" name="i17" required="true"><br><br>
+			<button type="submit" class="btn btn-primary btn-lg btn-block" name="book">Next page</button>
+		</form>
+	  </div>
+	</div>
+
+{% endblock %}

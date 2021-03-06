@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I</title>
+</head>
+<body>
+
+</body>
+</html>
+
+{% extends 'base.html' %}
+{% block content %}
+	<div class="card">
+	  <div class="card-body">
+	  	<center>
+	  		<h1>Thank you Sweetheart</h1>
+	    	<h3>Do you still believe that I made this website just to show some random questions ??</h3> 
+	    </center>
+	    <form action=""><br><br>
+			<a href="{% url 'VII' %}" class="btn btn-success btn-lg btn-block">YES</a>
+			<a href="{% url 'VII' %}" class="btn btn-warning btn-lg btn-block">NO</a>
+		</form>
+	  </div>
+	</div>
+
+{% endblock %}
